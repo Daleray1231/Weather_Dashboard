@@ -1,0 +1,41 @@
+/* Center the h1 element */
+h1 {
+  text-align: center;
+  color: white;
+  background: linear-gradient(to left, #003366, #0066cc); /* Gradient background from right to left and darker blue */
+  margin: 0; /* Remove default margin to avoid extra spacing */
+  padding: 20px; /* Add some padding for better appearance */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style the form container */
+#search-form {
+    /* text-align: center; */
+  }
+  
+  /* Style the input container */
+  .input-container {
+    display: inline-block; /* Display as inline-block to keep input and button on the same line */
+    margin-top: 10px; /* Add some space between the paragraph and the input container */
+  }
+  
+  /* Style the text input */
+  #city-input {
+    width: 100%; /* Make the input take up the full width of the container */
+    padding: 10px; /* Add padding for spacing inside the input */
+    border: 1px solid #ccc; /* Add a border for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  /* Style the search button */
+  button[type="submit"] {
+    width: 100%; /* Make the button take up the full width of the container */
+    padding: 10px; /* Add padding to the button for spacing and size */
+    background-color: #0074D9; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+  }
