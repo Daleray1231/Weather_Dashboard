@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Weather Dashboard</title>
-    <link rel ="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
+
 <body>
-  <h1>Weather Dashboard</h1>
-  
-  <form id="search-form">
-    <p>Search for a City:</p>
-    <div class="input-container">
-      <input type="text" id="city-input" placeholder="Enter a city">
-      <button type="submit">Search</button>
+  <header class="bg-dark text-white text-center">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2" style="height: 100vh;">
+        <h2>Search for a City</h2>
+        <input type="text" class="form-control" id="cityInput" placeholder="Enter city name here">
+        <button id="searchBtn" class="btn btn-primary btn-lg btn-block my-3">Search</button>
+        <hr>
+      </div>
+      <div class="col-lg-10">
+        <div class="row top-row-padding top-row-margin" id="cityData"></div>
+        <div class="row" id="fiveDayForecast">
+          <div class="col day-col-padding day-col-margin" id="day2">Day 2</div>
+          <div class="col day-col-padding day-col-margin" id="day3">Day 3</div>
+          <div class="col day-col-padding day-col-margin" id="day4">Day 4</div>
+          <div class="col day-col-padding day-col-margin" id="day5">Day 5</div>
+          <div class="col day-col-padding day-col-margin" id="day6">Day 6</div>
+        </div>
+      </div>
     </div>
-  </form>
-  
-  <div id="search-history">
-    <h2>Search History</h2>
-    <ul id="history-list"></ul>
-  </div>
-  
-  <div id="current-weather">
-    <h2>Current Weather</h2>
-    <div id="current-weather-details"></div>
-  </div>
-  
-  <div id="future-weather">
-    <h2>5-Day Forecast:</h2>
-    <div id="forecast-details"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./assets/javascript/script.js"></script>
 </body>
+
 </html>

@@ -1,41 +1,99 @@
-/* Center the h1 element */
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
   text-align: center;
   color: white;
   background: linear-gradient(to left, #003366, #0066cc); /* Gradient background from right to left and darker blue */
   margin: 0; /* Remove default margin to avoid extra spacing */
-  padding: 20px; /* Add some padding for better appearance */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Style the form container */
-#search-form {
-    /* text-align: center; */
-  }
-  
-  /* Style the input container */
-  .input-container {
-    display: inline-block; /* Display as inline-block to keep input and button on the same line */
-    margin-top: 10px; /* Add some space between the paragraph and the input container */
-  }
-  
-  /* Style the text input */
-  #city-input {
-    width: 100%; /* Make the input take up the full width of the container */
-    padding: 10px; /* Add padding for spacing inside the input */
-    border: 1px solid #ccc; /* Add a border for better appearance */
-    border-radius: 5px; /* Add rounded corners */
-    font-size: 16px; /* Adjust font size */
-  }
-  
-  /* Style the search button */
-  button[type="submit"] {
-    width: 100%; /* Make the button take up the full width of the container */
-    padding: 10px; /* Add padding to the button for spacing and size */
-    background-color: #0074D9; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Add rounded corners */
-    font-size: 16px; /* Adjust font size */
-    cursor: pointer; /* Add pointer cursor on hover */
-  }
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body .bg-secondary {
+  background-color: grey;
+}
+
+body .bg-info {
+  background-color: lightblue;
+  height: 50px;
+}
+
+body .bg-primary,
+body .bg-success,
+body .bg-danger,
+body .bg-warning,
+body .bg-light {
+  height: 200px;
+}
+
+#cityData {
+  min-height: 50px;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#fiveDayForecast .col {
+  color: whitesmoke;
+  background-color: rgb(2, 2, 67);
+  border-radius: 5px;
+}
+
+.row, .col {
+  padding: 15px;
+}
+
+.top-row-padding {
+  padding: 10px 20px;
+}
+
+.day-col-padding {
+  padding: 15px 30px;
+  min-height: 300px;
+}
+
+.top-row-margin {
+  margin: 10px 20px;
+}
+
+.day-col-margin {
+  margin: 15px 30px;
+}
+
+.weather-info {
+  min-height: 175px;
+} 
