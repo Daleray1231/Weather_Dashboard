@@ -7,30 +7,43 @@
 </head>
 
 <body>
+  <!-- Header Section -->
   <header>
     <h1>Weather Dashboard</h1>
   </header>
-  <div class="container-fluid">
+
+  <!-- Main Content Container -->
+  <div class="container">
     <div class="row">
-      <div class="col-lg-2">
-        <h2>Search for a City: </h2>
+      <!-- Left Column for Search -->
+      <div class="col-lg-4 left-column">
+        <!-- Search Form -->
+        <h2>Search for a City:</h2>
         <input type="text" class="form-control" id="cityInput" placeholder="Enter city name here">
         <button id="searchBtn">Search</button>
-        <hr>
+        <br>
+        <!-- Search History Display -->
+        <div id="searchHistory"></div>
       </div>
-      <div class="col-lg-10">
-        <div class="row top-row-padding top-row-margin" id="cityData"></div>
+      <!-- Right Column for City Data and Forecast -->
+      <div class="col-lg-8">Today: 
+        <!-- City Data Display -->
+        <br><div id="cityData"></div>
+        <!-- 5-Day Forecast Display -->
         <div class="row" id="fiveDayForecast">
-          <div class="col" id="day2">Day 2</div>
-          <div class="col" id="day3">Day 3</div>
-          <div class="col" id="day4">Day 4</div>
-          <div class="col" id="day5">Day 5</div>
-          <div class="col" id="day6">Day 6</div>
+          <div>5-Day Forecast:
+            <div class="col" id="day2">Day 2</div>
+            <div class="col" id="day3">Day 3</div>
+            <div class="col" id="day4">Day 4</div>
+            <div class="col" id="day5">Day 5</div>
+            <div class="col" id="day6">Day 6</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Include jQuery and Custom JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/javascript/script.js"></script>
 </body>
