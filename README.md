@@ -32,13 +32,15 @@ The Weather Dashboard is a web application that allows users to check the weathe
 
 ## Author
 
-[Dale Haynie]
+### Dale Haynie
 
-Github Profile:
+[Github Profile](https://github.com/Daleray1231) 
 
-Github Repo:
+[Github Repo](https://github.com/Daleray1231/Weather_Dashboard)
 
-Deployed Website: 
+[Deployed Website]()
+
+
 
 ## License
 
