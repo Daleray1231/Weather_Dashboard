@@ -38,9 +38,9 @@ The Weather Dashboard is a web application that allows users to check the weathe
 
 [Github Repo](https://github.com/Daleray1231/Weather_Dashboard)
 
-[Deployed Website]()
+[Deployed Website](https://daleray1231.github.io/Weather_Dashboard)
 
-
+![Alt text](Weather_dashboard.png)
 
 ## License
 
