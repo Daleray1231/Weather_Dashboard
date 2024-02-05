@@ -31,16 +31,13 @@ The Weather Dashboard is a web application that allows users to check the weathe
 - External Libraries: The project uses jQuery to simplify DOM manipulation and AJAX requests.
 
 ## Author
-
-### Dale Haynie
+**Dale Haynie**
 
 [Github Profile](https://github.com/Daleray1231) 
 
 [Github Repo](https://github.com/Daleray1231/Weather_Dashboard)
 
 [Deployed Website](https://daleray1231.github.io/Weather_Dashboard)
-
-![Alt text](Weather_dashboard.png)
 
 ## License
 

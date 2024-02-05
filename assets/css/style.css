@@ -1,144 +1,122 @@
-/* Reset default margin and padding for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set the base font for the entire page */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Style for the header element */
-header {
-  text-align: center;
-  color: white;
-  background: linear-gradient(to left, #003366, #0066cc);
-  margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Define font weight for heading elements */
+body,
 h1,
 h2,
-h3 {
-  font-weight: bold;
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-/* Style for paragraphs */
-p {
-  line-height: 1.6;
-  margin-bottom: 20px;
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Style for hyperlinks */
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-/* Apply padding to the header element */
 header {
-  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* Style for the 5-day forecast columns */
-#fiveDayForecast .col {
-  color: whitesmoke;
-  background-color: rgb(2, 2, 67);
-  border-radius: 5px;
-}
-
-/* Apply padding to row and column elements */
-.row,
-.col {
-  padding: 15px;
-}
-
-/* Additional padding style for specific rows */
-.top-row-padding {
-  padding: 10px 20px;
-}
-
-/* Additional padding style for specific columns */
-.day-col-padding {
-  padding: 15px 30px;
-  min-height: 300px;
-}
-
-/* Additional margin style for specific rows */
-.top-row-margin {
-  margin: 10px 20px;
-}
-
-/* Style for the main container, using flex layout */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card.search-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card.search-card h2 {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-/* Style for the City Data div */
-#cityData {
-  background-color: whitesmoke;
-  border: 1px solid grey;
-  padding: 10px;
-}
-
-/* Style for the 5-day forecast columns, with additional spacing */
-#fiveDayForecast .col {
-  color: whitesmoke;
-  background-color: rgb(2, 2, 67);
-  border-radius: 5px;
-  margin: 10px;
-  padding: 15px;
-}
-
-/* Style for the left column that contains search elements */
-.left-column {
-  background-color: lightblue;
-  padding: 20px;
-  border-radius: 5px;
+#searchHistory {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/* Additional styles to make the elements within the left column align to the left */
-.left-column h2,
-.left-column input,
-.left-column button,
-.left-column #searchHistory {
-  text-align: left;
-  margin-left: 0;
-  margin-right: 0;
+.history-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
-/* Adjust the style for the right column (City Data) */
-.col-lg-8 {
+@media (max-width: 768px) {
+  .history-button {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+}
+
+.card.today-section {
+  background-color: #fff;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.weather-info {
+  text-align: center;
+}
+
+.card.five-day-forecast {
   display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-  /* Allow City Data to take more space */
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-/* Style for the City Data div within the right column */
-#cityData {
-  background-color: whitesmoke;
-  border: 1px solid grey;
+.card.five-day-forecast .forecast-day {
+  flex-basis: calc(20% - 20px);
+  background-color: #fff;
   padding: 10px;
-  flex-grow: 1;
-  /* City Data takes the remaining space in the right column */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
-/* Style for the 5-day forecast columns, with additional spacing */
-#fiveDayForecast .col {
-  color: whitesmoke;
-  background-color: rgb(2, 2, 67);
-  border-radius: 5px;
-  margin: 10px;
-  padding: 15px;
+@media (max-width: 768px) {
+  .card.five-day-forecast .forecast-day {
+    flex-basis: calc(50% - 20px);
+    margin-right: 0;
+  }
 }

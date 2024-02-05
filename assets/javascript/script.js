@@ -1,13 +1,9 @@
-// Define the API key
 const apiKey = "17c217eb87e1e62fc400a04808b0be98";
 
-// Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Get references to the search button and city input field
   const searchBtn = document.getElementById("searchBtn");
   const cityInput = document.getElementById("cityInput");
 
-  // Allow pressing Enter in the input field to trigger the search
   cityInput.addEventListener("keydown", function (event) {
     if (event.keyCode === 13) {
       event.preventDefault();
@@ -15,18 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Load the search history from local storage
   loadSearchHistory();
 
-  // Handle the search button click event
   searchBtn.addEventListener("click", function () {
     const cityName = document.getElementById("cityInput").value;
 
-    // Save the search history and load it
     saveSearchHistory(cityName);
     loadSearchHistory();
 
-    // Fetch weather data
     fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=${apiKey}`
     )
@@ -49,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Load search history and display it as buttons
 function loadSearchHistory() {
   const historyContainer = document.getElementById("searchBtn").parentNode;
   const oldHistory = document.querySelectorAll(".history-button");
@@ -62,7 +53,7 @@ function loadSearchHistory() {
   searchHistory.reverse().forEach((city) => {
     const historyButton = document.createElement("button");
     historyButton.textContent = city;
-    historyButton.className = "btn btn-secondary btn-lg btn-block my-1 history-button";
+    historyButton.className = "history-button";
 
     historyButton.addEventListener("click", function () {
       document.getElementById("cityInput").value = city;
@@ -73,7 +64,7 @@ function loadSearchHistory() {
   });
 }
 
-// Save the city name to the search history in local storage
+
 function saveSearchHistory(cityName) {
   const searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
@@ -84,7 +75,6 @@ function saveSearchHistory(cityName) {
   localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 }
 
-// Update the 5-day forecast based on retrieved data
 function updateFiveDayForecast(data) {
   const cityDataDate = new Date(data.list[0].dt_txt);
 
@@ -108,7 +98,6 @@ function updateFiveDayForecast(data) {
   }
 }
 
-// Update the current weather based on retrieved data
 function updateCurrentWeather(currentData, cityName) {
   try {
     const currentTemperature = currentData.main.temp;
