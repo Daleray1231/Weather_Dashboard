@@ -1,43 +1,44 @@
 # Weather Dashboard
 
-The Weather Dashboard is a web application that allows users to check the weather forecast for a specific city. It provides current weather information and a 5-day forecast.
+The Weather Dashboard is a user-friendly web application designed to provide users with accurate and up-to-date weather forecasts for any desired city. It includes both the current weather conditions and a detailed 5-day forecast.
+
+![alt text](<assets/images/Opera Snapshot_2024-02-04_183640_127.0.0.1.png>)
 
 ## Features
 
-- Search for the weather forecast by entering a city name.
-- View the current weather details including temperature, wind speed, and humidity.
-- Check the 5-day weather forecast, with information for each day.
-- Easy-to-use interface with a clear layout.
+- **City Search:** Enter the name of any city to retrieve its weather forecast.
+- **Current Weather Details:** View real-time information such as temperature, wind speed, and humidity.
+- **5-Day Forecast:** Plan ahead with a 5-day weather forecast, including detailed daily weather information.
+- **Intuitive Interface:** The dashboard features an easy-to-use layout for a seamless user experience.
 
 ## How to Use
 
-1. Open the application in a web browser.
-2. Enter the name of the city you want to check the weather for.
-3. Click the "Search" button or press Enter to get the weather forecast.
-4. The current weather data and a 5-day forecast for the selected city will be displayed.
+1. Open the [Weather Dashboard](https://daleray1231.github.io/Weather_Dashboard/) in your preferred web browser.
+2. Enter the desired city name in the search bar.
+3. Click the "Search" button or press Enter to fetch the weather forecast.
+4. Instantly access the current weather data and a 5-day forecast for the selected city.
 
 ## Technologies Used
 
-- HTML: For structuring the web page.
-- CSS: For styling the user interface.
-- JavaScript: For interactive features and fetching weather data.
-- jQuery: A JavaScript library for DOM manipulation and AJAX requests.
+- **HTML:** Used for structuring the web page.
+- **CSS:** Styling the user interface for a visually appealing experience.
+- **JavaScript:** Implements interactive features and facilitates weather data retrieval.
+- **jQuery:** A JavaScript library simplifying DOM manipulation and AJAX requests.
 
 ## Project Structure
 
-- `index.html`: The main HTML file containing the structure of the Weather Dashboard.
-- `style.css`: The stylesheet for styling the web page.
-- `script.js`: The JavaScript file that handles user interactions and fetches weather data.
-- External Libraries: The project uses jQuery to simplify DOM manipulation and AJAX requests.
+- `index.html`: Main HTML file containing the structure of the Weather Dashboard.
+- `style.css`: Stylesheet for enhancing the visual presentation.
+- `script.js`: JavaScript file managing user interactions and handling weather data.
+- External Libraries: The project utilizes jQuery to streamline DOM manipulation and AJAX requests.
 
 ## Author
+
 **Dale Haynie**
 
-[Github Profile](https://github.com/Daleray1231) 
-
-[Github Repo](https://github.com/Daleray1231/Weather_Dashboard)
-
-[Deployed Website](https://daleray1231.github.io/Weather_Dashboard)
+- [GitHub Profile](https://github.com/Daleray1231)
+- [GitHub Repository](https://github.com/Daleray1231/Weather_Dashboard)
+- [Deployed Website](https://daleray1231.github.io/Weather_Dashboard)
 
 ## License
 
